@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--if lt IE 7html.no-js.lt-ie9.lt-ie8.lt-ie7(lang='es')
+-->
+<!--if IE 7html.no-js.lt-ie9.lt-ie8(lang='es')
+-->
+<!--if IE 8html.no-js.lt-ie9(lang='es')
+-->
+<!--if IE 9html.no-js.lt-ie10(lang='es')
+-->
+<!--[if gt IE 8]><!-->
+<html lang="es">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo de jade - django tempaltes</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <body id="body">
+    <div id="page" class="page">
+      <header id="header" class="header">
+        <h1>Jade - Django templates</h1>
+      </header>
+      <section id="content" class="content">
+        <div class="example">{% for item in items %}
+          <h1>{{item.title}}</h1>
+          <p>{{item.body}}</p>
+          <div class="cls">
+            <p>Hola esto es un texto de prueba para testear interpolación {{item.foo}}</p>
+            <div class="cls2">
+              <p>{{item.bar}} texto de prueba</p>
+            </div>
+          </div>{% endfor %}
+        </div>
+        <div class="example2">
+          <div class="class2">
+            <div class="class3">{% for foo in bar.baz %}
+              <h2>{{foo.title}}</h2>{% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer" class="footer">
+        <p>Esto es el footer de la página</p>
+      </footer>
+    </div>
+    <script src="foo.js"></script>
+  </body>
+</html>
