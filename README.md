@@ -3,6 +3,4 @@ Tarea gulp para traducir jade templates a django templates, solo para simple sin
 
 Comandos
 --------
-'''
-gulp templates
-'''
+run task `gulp tamplates`
