@@ -1,0 +1,30 @@
+{
+  "name": "jade-django-templates",
+  "version": "0.0.1",
+  "description": "tareas gulp para traducir plantillas jade a plantillas django",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zrobit/jade-django-templates.git"
+  },
+  "keywords": [
+    "gulp",
+    "jade",
+    "django",
+    "templates"
+  ],
+  "author": "zrobit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zrobit/jade-django-templates/issues"
+  },
+  "homepage": "https://github.com/zrobit/jade-django-templates#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-replace": "^0.5.4"
+  }
+}

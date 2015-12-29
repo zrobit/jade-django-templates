@@ -1,0 +1,24 @@
+extends _layout
+
+append vars
+  - var items = [{title: 'item title', body: 'paragraph', href: '#', src: '#', foo: 'another variable', bar: 'a baz variable'}]
+  - var bar = {}
+  - bar.baz = [{title:'foo title'}, {title: ' another foo title'}]
+
+block content
+  .example
+    for item in items
+      h1=item.title
+      p=item.body
+      .cls
+        p Hola esto es un texto de prueba para testear interpolación #{item.foo}
+        .cls2
+          p #{item.bar} texto de prueba
+      //- endfor
+
+  .example2
+    .class2
+      .class3
+        for foo in bar.baz
+          h2=foo.title
+          //- endfor
