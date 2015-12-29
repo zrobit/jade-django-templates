@@ -30,7 +30,7 @@
           <div class="cls">
             <p>Hola esto es un texto de prueba para testear interpolación {{item.foo}}</p>
             <div class="cls2">
-              <p>{{item.bar}} texto de prueba</p>
+              <p>{{item.bar}} texto de prueba</p>{% if item.bar %}<span>hello!</span>{% elif item.foo %}<span>Bye!</span>{% else %}<span>cool!</span>{% endif %}
             </div>
           </div>{% endfor %}
         </div>

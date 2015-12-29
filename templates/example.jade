@@ -14,6 +14,13 @@ block content
         p Hola esto es un texto de prueba para testear interpolación #{item.foo}
         .cls2
           p #{item.bar} texto de prueba
+          if item.bar
+            span hello!
+          else if item.foo
+            span Bye!
+          else
+            span cool!
+            //- endif
       //- endfor
 
   .example2
